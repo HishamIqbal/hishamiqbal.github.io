@@ -3,7 +3,7 @@ body {
     width: 70%;
     /* We're working with the body tag, and so with the WHOLE page */
 
-    background-color: beige; /* The page background will be black */
+    background-color: gainsboro; /* The page background will be black */
     color: black; /* The page text will be white */
 
 }
