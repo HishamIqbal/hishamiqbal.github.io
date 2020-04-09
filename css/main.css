@@ -1,66 +1,27 @@
-li{
-    list-style-type: none;
-    margin: 0 2vw;
-    
-    font-size: 3vh;
-  }
-  
-  a{
-    text-decoration: none;
-    color: black;
-    font-family: monospace;
-  
-    padding: 2vw;
-  }
-  
-  nav{
-    width: 100vw;
-    background-color: #D6EFFF;
-  }
-  
-  ul{
+/* Define the main Navigation block */
+.myNav {
     display: block;
-    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+}
+/* Remove bullets, margin and padding */
+.myNav ul {
+    list-style: none;
     padding: 0;
-    
-    display: flex;  
-  }
-  
-  body{
     margin: 0;
-  }
-  
-  button{
-    display: none;
-  }
-  
-  a:hover{
-    background-color: #C6E9FF;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    ul{
-      flex-direction: column;
-    }
-    
-    a{
-      display: block;
-    }
-    
-    li{
-      margin: 0;
-    }
-    
-    button{
-      display: block;
-      
-      padding: 2vw;
-      font-size: 3vh;
-      background-color: #AFE0FF;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      
-      align-self: flex-start;
-    }
-  }
+}
+.myNav li {
+    float: left;
+    /* Or you can use display: inline; */
+}
+/* Define the block styling for the links */
+.myNav li a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+/* This is optional, however if you want to display the active link differently apply a background to it */
+.myNav li a.active {
+    background-color: #3786E1;
+}

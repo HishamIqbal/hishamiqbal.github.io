@@ -1,44 +1,7 @@
-<nav>
-	<ul>
-		<button>🞬</button>
-	  <li> 
-		<!-- link one -->
-		<a href="#aboutMe"> About Me </a>
-	  </li>
-	  <li>
-		<!-- link two -->
-		 <a href="#projects"> Experience </a>
-	  </li>
-	  <li>
-		<!-- link three -->
-		<a href="#cv"> Blog </a>
-	  </li>
-	  <li>
-		<!-- link four -->
-		<a href="#contacts"> Contact </a>
-	  </li>
-	</ul>
-  </nav>
-
-  <!-- library link -->
-<script src="jquery-3.4.0.min.js"></script>
-
-<!-- script below -->
-<script type="text/javascript">
-
-$(document).ready(function(){
-  /* function called when you click of the button */
-  $("button").click(function(){
-      
-      /* this if else to change the text in the button */
-      if($("button").text() == "☰"){
-       $("button").text("🞬");
-      }else{
-        $("button").text("☰");
-      }
-    
-    /* this function toggle the visibility of our "li" elements */
-    $("li").toggle("slow");
-  });
-});
-</script>
+<nav class="myNav">                                 <!-- Any element can be used here -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
