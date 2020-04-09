@@ -3,7 +3,7 @@ body {
     width: 70%;
     /* We're working with the body tag, and so with the WHOLE page */
 
-    background-color: gray; /* The page background will be black */
+    background-color: beige; /* The page background will be black */
     color: black; /* The page text will be white */
 
 }
@@ -81,7 +81,7 @@ ul.posts li {
   /* Style the container/contact section */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
     padding: 10px;
   }
   
