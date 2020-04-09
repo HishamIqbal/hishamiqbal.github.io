@@ -1,135 +1,46 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-    /* We're working with the body tag, and so with the WHOLE page */
-
-    background-color: gainsboro; /* The page background will be black */
-    color: black; /* The page text will be white */
-
+    margin: 0;
+    margin-top: 50px;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
 }
-nav ul li, footer ul li {
+
+header * {
     display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    height: 50px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+header ul {
+    padding: 0;
 }
 
-ul.posts li {
-    list-style: none;
+header li {
+    margin-left: 20px;
 }
 
-.img-email {
-    width: 300px
-}
-
-#contact
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the container/contact section */
-  .container {
-    border-radius: 5px;
-    /*background-color: #f2f2f2;*/
-    padding: 10px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  
-  /* The hero image */
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coffee.jpg");
-  
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text {
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
+}
+
+#hero .profile-img {
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
