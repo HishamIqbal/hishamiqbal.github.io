@@ -47,7 +47,7 @@ header li a {
   
   /* Style inputs */
   input[type=text], select, textarea {
-    width: 40%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -80,7 +80,7 @@ header li a {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-  }*/
+  }
   
   /* Clear floats after the columns */
   .row:after {
