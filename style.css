@@ -112,3 +112,18 @@ textarea {
   top img{
     border-radius: 20%;
   }
+
+  .container-custom {
+    margin-top: 4em;
+  }
+  
+  #about-me-heading {
+    font-weight: 600;
+  }
+  .about-me-word {
+    font-weight: 600;
+  }
+  .about-me-social-logo {
+    height: 2em;
+    margin-right: .7em;
+  }
