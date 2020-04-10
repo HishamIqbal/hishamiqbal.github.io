@@ -47,7 +47,7 @@ header li a {
   
   /* Style inputs */
   input[type=text], select, textarea {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
