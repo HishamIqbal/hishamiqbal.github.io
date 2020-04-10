@@ -17,16 +17,15 @@ main {
 
 header {
     background-color: gray;
+    position: fixed;
     top: 0;
+    left: 0;
     right: 0;
     height: 80px;
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
-    float: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 
 }
 
