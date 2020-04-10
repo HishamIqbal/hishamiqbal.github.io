@@ -89,15 +89,11 @@ textarea {
 
 
 
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: black;
-    text-align: center;
-  }
+.footer {
+  position:static;
+  display:table-row;
+  height:100px; /* will still expand with larger content */
+}
 
   hr {
     display: block;
