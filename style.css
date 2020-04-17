@@ -156,8 +156,9 @@ textarea {
   margin-left: -100px;
 }
 
-.wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: orange;
 }
