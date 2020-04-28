@@ -154,8 +154,8 @@ html, body {
 }
 .content {
   padding: 20px;
-  min-height: 100%;
-  margin: 0 auto -40px;
+  min-height: 90%;
+  margin: 0 auto -50px;
 }
 .footer,
 .push {
