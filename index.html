@@ -1,67 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- PAGE TITLE -->
-    <title>Personal portfolio website</title>
-    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- ALL GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900" rel="stylesheet">
-    <!-- MAIN STYLE CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    
-	
-	<header class="menu-area">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-4">
-	                <div class="logo">
-	                    <h2>john Doe</h2>
-	                </div>
-	            </div>
-	            <div class="col-md-8">
-	                <div class="main-menu">
-	                    <ul>
-	                        <li><a href="">Home</a></li>
-	                        <li><a href="">About</a></li>
-	                        <li><a href="">Service</a></li>
-	                        <li><a href="">Work</a></li>
-	                        <li><a href="">Contact Me</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</header>
-	
-	<section class="header-area d-flex align-items-center">
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-md-12">
-	                <div class="header-text text-center">
-	                    <h1>Jonathon Doe</h1>
-	                    <h2>web designer/web developer</h2>
-	                    <a href="">my works</a>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	
-	
-	
-   <!-- LATEST JQUERY -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- BOOTSTRAP JS -->
-    <script src="js/bootstrap.min.js"></script>
-</body>
-
+<html>
+    <head>
+        <title>Hisham Iqbal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/experience">Experience</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "content">
+            <p>
+              <top>
+                <div class="row">
+                  <div class="column" id = "image">
+                    <h2><img src="images/coffee.jpg" alt="Avatar" width = 100px height = 100px></h2>
+                  </div>
+                  <div class="column">
+                    <h2><font color="purple"> Hello, I'm Hisham! </font></h2>
+                    <p><font color="purple">I am a current 4th year at the University of Virginia studying Computer Science and Economics. I am enroute to becoming a Consultant for Deloitte. Feel free to browse through this site. </font></p>
+                  </div>
+                </div>
+                </top>
+              <hr>
+				<div class="container">
+					<div style="text-align:center">
+					  <h2><font color="purple">Contact Me!</font></h2>
+					  <p><font color="purple">Swing by for a cup of coffee, or leave us a message:</font></p>
+					</div>
+					<div class="row">
+						<form>      
+							<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+							<input name="email" type="text" class="feedback-input" placeholder="Email" />
+							<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+							<input type="submit" value="SUBMIT"/>
+						  </form>
+					</div>
+				  </div>
+			</p>
+        </main>
+        
+        <hr>
+                  
+          <footer class="footer">
+            Footer 
+          </footer>
+                
+  </body>
 </html>
+
+
+
