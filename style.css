@@ -42,3 +42,10 @@ header
 {
   border: 1px solid white;
 }
+
+.logo img
+{
+  width: 150px;
+  height: auto;
+  float: left;
+}
