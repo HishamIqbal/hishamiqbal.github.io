@@ -68,7 +68,7 @@ a.btn-second
   color: rgb(0, 0, 0);
 }
 
-a.btn-first:hover
+a.btn-second:hover
 {
   background: darkorange;
   border: none;
@@ -77,7 +77,7 @@ a.btn-first:hover
   transition: 0.3s;
 }
 
-a.btn-second:hover
+a.btn-first:hover
 {
   background: transparent;
   border: none;
