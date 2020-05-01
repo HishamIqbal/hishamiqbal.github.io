@@ -11,6 +11,18 @@
   box-shadow: 0 5px 10px #0a0606;
 }
 
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float:none;
+}
+
 .logo
 {
   height: 48px;
