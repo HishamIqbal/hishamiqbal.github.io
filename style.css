@@ -65,14 +65,23 @@ a.btn-second
 {
   background: transparent;
   border: 1px solid darkorange;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
-a.btn:hover
+a.btn-first:hover
 {
   background: darkorange;
   border: none;
   color: #fff;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
+}
+
+a.btn-second:hover
+{
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
   box-shadow: 5px 5px 10px #999;
   transition: 0.3s;
 }
