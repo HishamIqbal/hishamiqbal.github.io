@@ -268,3 +268,52 @@ a.btn-first:hover
 
 
 
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .navbar-custom {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: 1.5px solid gray;
+    height: 4.1em;
+    background: #353535;
+  }
+  .navbar-nav-default {
+    height: 100%;
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav-link-custom-active {
+    border-bottom: 3px solid #17E7CF;
+    height: 100%;
+  }
+  .nav-link-custom {
+    color: white;
+  }
+  #about-me-parragraph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about-me-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #about-me-social-logos-container {
+    margin-top: 1em;
+  }
+  #about-me-image {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 14em;
+    border: 2px solid #343a40;
+    padding: .2em;
+  }
+  #contact-form {
+    width: 55%;
+  }
+}
