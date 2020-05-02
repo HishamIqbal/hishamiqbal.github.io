@@ -176,7 +176,6 @@ a.btn-first:hover
   height: 4em;
   background: white;
   object-fit: cover;
-  border-radius: 50%;
   padding: .3em;
 }
 .experience-details-item {
@@ -193,7 +192,7 @@ a.btn-first:hover
   border-radius: 5px;
   margin-right: .7em;
   padding: .1em .5em;
-  font-size: 85%;
+  font-size: 100%;
 }
 .experience-header {
   margin-bottom: .1em;
