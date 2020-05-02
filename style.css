@@ -144,7 +144,7 @@ a.btn-first:hover
   justify-content: flex-end;
 }
 .company-logo {
-  width: 4em;
+  width: 5em;
   height: 4em;
   background: white;
   object-fit: cover;
