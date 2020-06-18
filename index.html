@@ -1,108 +1,93 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>
-   Hisham Iqbal
-  </title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel= "stylesheet" type="text/css">
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
 </head>
-
-
-
 <body>
-  <header class ="header">
-    <nav class ="navbar navbar-style">
-      <div class ="containter">
-        <div class="navbar-header">
-          <button type="button" class ="navbar-toggle" data-toggle="collapse" data-target="">
-            <span class ="icon-bar"></span>
-            <span class ="icon-bar"></span>
-            <span class ="icon-bar"></span>
-          </button>
-          <a href =""><img class="logo" src = "images/icon.png"></a>
-        </div>
 
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/experience">Experiences</a></li>
-          <li><a href="/blog">Blog</a></li>
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
-        </ul>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
 
-      </div>
-    </nav>
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
 
-    <img class="img-banner" src="/images/background.png" alt="mmtuts banner" class="img-responsive">
-  </header>
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
 
- 
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
 
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
 
- 
-  <div class="container container-custom">
-    <div class="row">
-      <div class="col-lg-6 col-sm-12">
-        <div id="about-me-image-container">
-          <img id="about-me-image" src="/images/hisham.jpg" />
-        </div>
-      </div>
-      <div id="about-me-parragraph-container" class="col-lg-6 col-lg-12">
-        <h5 id="about-me-heading">Hello, I'm Hisham!</h5>
-        <p id="about-me-parragraph">I'm a graduating student from the <span class="about-me-word">University of Virginia</span> studying Computer Science and Economics. </p>
-        <div id="about-me-social-logos-container">
-          <a href="https://twitter.com/hisgoesham" target="_blank">
-            <img class="about-me-social-logo" src="/images/twitter.png"/>
-          </a>
-          <a href="https://github.com/HishamIqbal" target="_blank">
-            <img class="about-me-social-logo" src="/images/github.svg"/>
-          </a>
-          <a href="mailto:iqbal@virginia.edu" target="_blank">
-            <img class="about-me-social-logo" src="/images/gmail.png"/>
-          </a>
-          <a href="https://www.linkedin.com/in/mohammad-hisham-iqbal-a3b955129/" target="_blank">
-            <img class="about-me-social-logo" src="/images/linkedin.png"/>
-          </a>
-          <a href="https://www.facebook.com/HisGoesHam?ref=bookmarks" target="_blank">
-            <img class="about-me-social-logo" src="/images/facebook.png"/>
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr id="about-me-horizontal-line"/>
-    <div id="contact-form-container">
-      <h5 id="contact-form-header"> Contact me!</h5>
-      <form id="contact-form" form action="https://formspree.io/myynygdg" method="POST">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email</label>
-          <input name="name" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <input id="contact-form-button" type="submit" value="Submit"/>
-      </form>
-    </div>
-  </div>
-  <div id="footer-container">
-    <p id="footer-content">&copy; Hisham Iqbal 2020 Copyright</p>
-  </div>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
 </body>
-</html>
-
-
-
+</html> 
