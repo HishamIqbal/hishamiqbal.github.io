@@ -5,6 +5,37 @@
 
 
 <style>
+
+  /*----------------------------------------------------------------- blog content css---------------------------------------------------------------*/
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------------------------------------------------------------- header css---------------------------------------------------------------*/
+
+
 body, html {
   height: 100%;
   margin: 0;
@@ -106,33 +137,25 @@ body, html {
   </div>
 </div>
 
-<p>Page Content..</p>
+<!----------------------------------------------------------------- content html---------------------------------------------------------->
 
-<p>Page Content..</p>
 
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
-
-<p>Page Content..</p>
+<div class="leftcolumn">
+  <div class="card">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+  <div class="card">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
 
 <!----------------------------------------------------------------- hero html---------------------------------------------------------->
 
