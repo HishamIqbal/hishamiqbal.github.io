@@ -97,6 +97,11 @@ body, html {
   color: white;
 }
 
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 
 /*----------------------------------------------------------------- top menu css---------------------------------------------------------------*/
 
@@ -142,21 +147,20 @@ body, html {
 
 <!----------------------------------------------------------------- top menu html---------------------------------------------------------->
 
-<div class="topnav">
-  <a href="/">Home</a>
-  <a class="active" href="/blog">Blog</a>
-  <a href="/experience">Experience</a>
-  <a href="/about">About</a>
-</div>
-
-<!----------------------------------------------------------------- hero html---------------------------------------------------------->
-
 <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">Blog</h1>
-    <p>Musings from my mind</p>
+  <div class="container">
+    <div class="topnav">
+      <a class="active" href="/blog">Professional</a>
+      <a href="/experience">Interests</a>
+      <a href="/about">About</a>
+      <a href="/">Home</a>
+      
+    </div>
   </div>
-</div>
+  <div class="hero-text">
+    <h1 style="font-size:50px">Hisham Iqbal</h1>
+    <p>Welcome to my story</p>
+  </div>
 
 <!----------------------------------------------------------------- content html---------------------------------------------------------->
 <div class="row">
