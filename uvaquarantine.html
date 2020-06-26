@@ -12,6 +12,15 @@ body, html {
 }
 
 
+/*----------------------------------------------------------------- body css---------------------------------------------------------------*/
+
+
+h1 {text-align: center; margin-right: 150px;
+  margin-left: 150px;}
+p {text-align: center; margin-right: 150px;
+  margin-left: 150px;}
+div {text-align: center;}
+
 
 /*----------------------------------------------------------------- top menu css---------------------------------------------------------------*/
 
@@ -21,7 +30,7 @@ body, html {
 
 .topnav a {
   float: right;
-  color: #f2f2f2;
+  color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,17 +45,6 @@ body, html {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
-}
-
-/*----------------------------------------------------------------- content css---------------------------------------------------------------*/
-
-.bodyheader a {
-    font-size: large;
-    word-wrap: break-word;
-  }
-.bodyheader b{
-    font-size: medium;
-    word-wrap: break-word;
 }
 
 /*----------------------------------------------------------------- footer css---------------------------------------------------------------*/
@@ -66,36 +64,47 @@ body, html {
 </head>
 <body>
 
-<!----------------------------------------------------------------- top menu html---------------------------------------------------------->
 
-<div class="topnav">
-  <a class="active" href="/">Home</a>
-  <a href="/blog">Blog</a>
-  <a href="/experience">Experience</a>
-  <a href="/about">About</a>
-</div>
 
-<!----------------------------------------------------------------- content html---------------------------------------------------------->
 
-<div class="bodyheader">
-   <a class="a">A story ended early</a>
-    <b class="b">It’s weird. The moment I received the email, I was across the 
-        border as a tourist in our Northern neighbor. I was supposed to be 
-        across the waters as a tourist in our Western neighbors. My friend and I had to 
-        cancel our Senior year Spring Break trip to Europe last minute due to Coronavirus. Amidst all the chaos 
-        going on in Europe, we did not have any inclination that America would be the next victim. That’s why driving 
-        by the Niagara Falls and recieving the email by Jim Ryan, University of Virginia President, that school would 
-        be cancelled was exhilirating. That was my initial emotion. I felt released from school, released from the 
-        responsibility that came with it.</b> 
-</div>
+<!----------------------------------------------------------------- hero html---------------------------------------------------------->
 
+
+  <div class="hero-text">
+    <h1 style="font-size:50px">Hisham Iqbal</h1>
+    <p>Just another mango man</p>
+  </div>
   
+
+<br>
+
+<h1 style="font-size:300%;">I am a Problem Solver.</h1>
+
+<p style="font-size:150%;"> 
+  The word consultant is defined as someone who provides expert advice. My life has been developed around this basic premise. Advice is
+  shared when there is a problem with a current system or where there is room for that system to improve. The advice that I often give 
+  is to myself in order to continuously improve my life. I also offer advice, often times to no avail, to others.
+  <br>
+  <br>
+  <br>
+
+  This page will be used to update myself and the world about my life happenings. I hope to write frequently on this 
+  but alas, all wishes do not come true. I have a lot of interests, endeavors and passions that I hope to share through this platform so 
+  please join me on this ride!
+</p>
+
 
 <!----------------------------------------------------------------- hero html---------------------------------------------------------->
 
 
 <div class="footer">
-  <p>Footer</p>
+  <p>
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/meetwithhisham'});return false;">Schedule time with me</a>
+    <!-- Calendly link widget end -->
+  </p>
 </div>
 
 </body>
