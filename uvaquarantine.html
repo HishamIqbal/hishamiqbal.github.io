@@ -11,6 +11,11 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 
 /*----------------------------------------------------------------- body css---------------------------------------------------------------*/
 
@@ -30,7 +35,7 @@ div {text-align: center;}
 
 .topnav a {
   float: right;
-  color:black;
+  color:  purple;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -69,7 +74,15 @@ div {text-align: center;}
 
 <!----------------------------------------------------------------- hero html---------------------------------------------------------->
 
-
+  <div class="container">
+    <div class="topnav">
+      <a href="/blog">Professional</a>
+      <a href="/experience">Interests</a>
+      <a href="/about">About</a>
+      <a class="active" href="/">Home</a>
+      
+    </div>
+  </div>
   <div class="hero-text">
     <h1 style="font-size:50px">Hisham Iqbal</h1>
     <p>Just another mango man</p>
