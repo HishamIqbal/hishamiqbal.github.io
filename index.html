@@ -101,45 +101,17 @@ div {text-align: center;}
    text-align: center;
 }
 
-form {
-  border: 4px solid #f1f1f1;
+.column {
+  float: left;
+  width: 50%;
 }
 
-/* Add some padding and a grey background color to containers */
-.container {
-  padding: 20px;
-  background-color: #f1f1f1;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-/* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Add margins to the checkbox */
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
-
-
-
 
 </style>
 </head>
@@ -185,35 +157,19 @@ input[type=submit]:hover {
 
 <!----------------------------------------------------------------- footer html---------------------------------------------------------->
 
-
 <div class="footer">
+  <div class="column">
+    <p>
+      <!-- Calendly link widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/meetwithhisham'});return false;">Schedule time with me</a>
+      <!-- Calendly link widget end -->
+    </p>
+  </div>
+  <div class="column">
 
-  <form action="action_page.php">
-    <div class="container">
-      <h2>Subscribe to our Newsletter</h2>
-      <p>Lorem ipsum..</p>
-    </div>
-  
-    <div class="container" style="background-color:white">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="text" placeholder="Email address" name="mail" required>
-      <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-      </label>
-    </div>
-  
-    <div class="container">
-      <input type="submit" value="Subscribe">
-    </div>
-  </form>
-
-  <p>
-    <!-- Calendly link widget begin -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/meetwithhisham'});return false;">Schedule time with me</a>
-    <!-- Calendly link widget end -->
-  </p>
+  </div>
 </div>
 
 </body>
